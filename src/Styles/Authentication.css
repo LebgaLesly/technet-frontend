@@ -1,0 +1,76 @@
+
+
+.bg {
+    background-image: url('../Images/Banner/auth.jpeg');
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    width: 360px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 10px;
+   
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ee9b0c;
+  }
+  
+  .form-field {
+    margin: 10px 0 20px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+  }
+  
+  span {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  
+  button {
+    background: #ee9b0c;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+    width: 120px;
+    margin: auto;
+  }
+
+  button:hover{
+    border-color: #ee9b0c;
+  }
+  
+  button:disabled {
+    cursor: default;
+  }
+
+  div .error {
+    padding: 10px;
+    background: #2f2f2f;
+    border: 1px solid #ee9b0c;
+    color: #ee9b0c;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+
