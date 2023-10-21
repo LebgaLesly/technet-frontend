@@ -11,7 +11,6 @@ export const useLogin  = () => {
         setError(null)
 
         const response = await fetch('users/login', {
-            mode: 'no-cors',
             method: 'POST',
             headers: {'Content-Type': 'application/json',
             "Access-Control-Allow-Origin" : "*", 
@@ -19,7 +18,7 @@ export const useLogin  = () => {
             body: JSON.stringify({name, password})
         })
 
-        const json = await response.json()
+        const json = await response
 
         if (!response.ok) {
             setIsLoading(false)

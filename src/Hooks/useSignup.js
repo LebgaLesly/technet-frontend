@@ -11,15 +11,14 @@ export const useSignup = () => {
         setError(null)
 
         const response = await fetch('users/signup', {
-            mode: 'no-cors',
-            method: 'POST',
+              method: 'POST',
             headers: {'Content-Type': 'application/json',
             "Access-Control-Allow-Origin" : "*", 
             "Access-Control-Allow-Credentials" : true },
             body: JSON.stringify({name, email, password})
         })
 
-        const json = await response.json()
+        const json = await response
 
         if (!response.ok) {
             setIsLoading(false)
