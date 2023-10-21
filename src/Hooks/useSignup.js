@@ -11,6 +11,7 @@ export const useSignup = () => {
         setError(null)
 
         const response = await fetch('users/signup', {
+            mode: 'no-cors',
             method: 'POST',
             headers: {'Content-Type': 'application/json',
             "Access-Control-Allow-Origin" : "*", 
