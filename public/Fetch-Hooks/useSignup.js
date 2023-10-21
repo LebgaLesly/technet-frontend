@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuthContext } from "./useAuthContext";
+import { useAuthContext } from "../../src/Hooks/useAuthContext.js";
 
 export const useSignup = () => {
     const [error, setError] = useState(null)
@@ -16,7 +16,7 @@ export const useSignup = () => {
             body: JSON.stringify({name, email, password})
         })
 
-        const json = await response.text()
+        const json = await response.json()
 
         if (!response.ok) {
             setIsLoading(false)
