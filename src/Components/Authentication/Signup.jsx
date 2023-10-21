@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../../Styles/Authentication.css';
 
-import { useSignup } from '../../../public/Fetch-Hooks/useSignup';
+import { useSignup } from '../../Hooks/useSignup';
 
 const Signup = () => {
   const [name, setName] = useState('');
