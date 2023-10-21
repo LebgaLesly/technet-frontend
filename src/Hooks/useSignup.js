@@ -12,10 +12,7 @@ export const useSignup = () => {
 
         const response = await fetch('users/signup', {
             method: 'POST',
-            headers: {'Content-Type': 'application/json',
-            'Accept': 'application/json'
-
-        },
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({name, email, password})
         })
 
